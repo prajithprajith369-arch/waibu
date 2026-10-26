@@ -13,7 +13,7 @@ One bar at the top of your screen shows what Claude is doing, and every notifica
 - **Loop coach.** When Claude repeats the same failing step, Waibu gives it a tip, then stops the loop before it burns your usage.
 - **Done** and **limit reset** notices.
 
-Click the arrow and a panel drops down. Drag it anywhere.
+Click the arrow and a panel drops down. Drag it anywhere, and resize it from its bottom-right corner. Don't want the bar? Turn it off with the power button in the panel, and back on from the tray icon or Settings.
 
 - **Tell Claude something.** Your message reaches Claude right after its current step, even while it's working in your terminal.
 - **Look at my screen.** Waibu takes a screenshot and hands it to Claude with its next step.
@@ -31,13 +31,13 @@ Everything stays on your PC. Waibu has no account and sends nothing anywhere.
 
 ## Download
 
-**[Download Waibu for Windows](https://github.com/prajithprajith369-arch/waibu/releases/latest)** (Waibu-Setup-0.2.0.exe, about 115 MB)
+**[Download Waibu for Windows](https://github.com/prajithprajith369-arch/waibu/releases/latest)** (Waibu-Setup-0.2.1.exe, about 115 MB)
 
 Needs Windows 10 or 11 (64-bit) and Claude Code installed.
 
 ## Install
 
-1. Run **Waibu-Setup-0.2.0.exe**. No admin rights needed.
+1. Run **Waibu-Setup-0.2.1.exe**. No admin rights needed.
 2. Windows may show **"Windows protected your PC"**, because the installer isn't code-signed yet. Click **More info**, then **Run anyway**.
 3. Waibu opens. Click **Connect Claude Code** on the welcome screen.
    This adds Waibu to Claude Code's settings for every project, plus Claude Code's status line (that's how Waibu reads your limits). Your existing settings are kept, a status line of your own is never replaced, and a backup is saved as `settings.json.waibu-backup`.
@@ -45,11 +45,11 @@ Needs Windows 10 or 11 (64-bit) and Claude Code installed.
 
 If Waibu isn't running, Claude Code works exactly as before.
 
-### Updating from 0.1.0
+### Updating
 
 1. Quit Waibu from its tray icon (right-click > **Quit Waibu**).
-2. Run **Waibu-Setup-0.2.0.exe**. Your settings and history are kept.
-3. In Waibu, open **Settings**, click **Disconnect** next to Claude Code, then **Connect everywhere**. This adds the status line so Waibu can show your limits.
+2. Run **Waibu-Setup-0.2.1.exe**. Your settings and history are kept.
+3. Coming from 0.1.0 only: in Waibu, open **Settings**, click **Disconnect** next to Claude Code, then **Connect everywhere**. This adds the status line so Waibu can show your limits.
 
 ## Optional: let Claude ask to see your screen
 
