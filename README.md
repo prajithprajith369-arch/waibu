@@ -14,7 +14,22 @@ No logs to read. Waibu tells you what's going on:
 
 > **Fixing the login button.** Claude changed login.js and auth.js. 1 test failed, so it's trying another fix.
 
-You also see how far along it is: looked around, made changes, checking its work (2nd try). Waibu works this out on your PC from Claude's own steps, so it costs **0 tokens**.
+You also see how far along it is: looked around, made changes, checking its work (2nd try). Waibu works this out on your PC from Claude's own steps, so it costs **0 tokens**. When Claude finishes, its answer shows up right in the pop-up.
+
+## Speak your prompt
+
+Tap the mic in the panel, or press **Alt + M** anywhere, and just talk. Your words land in the message box so you can check them before sending.
+
+Waibu uses open-source voice models that run on your PC. Pick one the first time, or in **Settings › Voice**:
+
+| Model | Download | Good for |
+|---|---|---|
+| Whisper base | 77 MB | Most people, many languages |
+| Moonshine | 63 MB | Fast, English only |
+| Whisper tiny | 41 MB | Smallest, English only |
+| Whisper small | 249 MB | Most accurate, slower on older PCs |
+
+Each model downloads once from Hugging Face. After that your voice never leaves your PC, and Claude only gets the words you send.
 
 ## The control bar
 
@@ -43,13 +58,13 @@ Everything stays on your PC. Waibu has no account and sends nothing anywhere.
 
 ## Download
 
-**[Download Waibu for Windows](https://github.com/prajithprajith369-arch/waibu/releases/latest)** (Waibu-Setup-0.3.0.exe, about 115 MB)
+**[Download Waibu for Windows](https://github.com/prajithprajith369-arch/waibu/releases/latest)** (Waibu-Setup-0.4.0.exe, about 120 MB)
 
 Needs Windows 10 or 11 (64-bit) and Claude Code installed.
 
 ## Install
 
-1. Run **Waibu-Setup-0.3.0.exe**. No admin rights needed.
+1. Run **Waibu-Setup-0.4.0.exe**. No admin rights needed.
 2. Windows may show **"Windows protected your PC"**, because the installer isn't code-signed yet. Click **More info**, then **Run anyway**.
 3. Waibu opens. Click **Connect Claude Code** on the welcome screen.
    This adds Waibu to Claude Code's settings for every project, plus Claude Code's status line (that's how Waibu reads your limits). Your existing settings are kept, a status line of your own is never replaced, and a backup is saved as `settings.json.waibu-backup`.
@@ -60,7 +75,7 @@ If Waibu isn't running, Claude Code works exactly as before.
 ### Updating
 
 1. Quit Waibu from its tray icon (right-click > **Quit Waibu**).
-2. Run **Waibu-Setup-0.3.0.exe**. Your settings and history are kept.
+2. Run **Waibu-Setup-0.4.0.exe**. Your settings and history are kept.
 3. Coming from 0.1.0 only: in Waibu, open **Settings**, click **Disconnect** next to Claude Code, then **Connect everywhere**. This adds the status line so Waibu can show your limits.
 
 ## Optional: let Claude ask to see your screen
@@ -74,6 +89,7 @@ If Waibu isn't running, Claude Code works exactly as before.
 | Show or hide the Waibu window | Ctrl + Shift + Space |
 | Allow (when asked) | Alt + A |
 | Block (when asked) | Alt + B |
+| Speak to Claude | Alt + M |
 | Close the control panel | Esc |
 
 ## Uninstall
